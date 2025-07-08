@@ -33,7 +33,7 @@
 
 #include "src/find_polynomial_roots_jenkins_traub.h"
 
-#include "libs/eigen/Eigen/Core"
+#include "libs/Eigen/Core"
 
 #include <cmath>
 #include <complex>

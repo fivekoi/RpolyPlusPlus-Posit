@@ -33,7 +33,7 @@
 
 #include "src/polynomial.h"
 
-#include "libs/eigen/Eigen/Core"
+#include "libs/Eigen/Core"
 #include <cmath>
 
 namespace rpoly_plus_plus {

@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
 PROJECT(RpolyPlusPlus C CXX)
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR})
 LIST(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
@@ -10,12 +10,8 @@ SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
-# Set Minimum Eigen version and find the installed package.
-SET(MIN_EIGEN_VERSION 3.2.0)
-FIND_PACKAGE(Eigen ${MIN_EIGEN_VERSION} REQUIRED)
-IF (EIGEN_FOUND)
-  MESSAGE("-- Found Eigen version ${EIGEN_VERSION}: ${EIGEN_INCLUDE_DIRS}")
-ENDIF (EIGEN_FOUND)
+# Local Eigen include
+include_directories(SYSTEM ${PROJECT_SOURCE_DIR}/libs/Eigen)
 
 # Use a larger inlining threshold for Clang, since it hobbles Eigen,
 # resulting in an unreasonably slow version of the blas routines. The

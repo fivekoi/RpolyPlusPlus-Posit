@@ -34,7 +34,7 @@
 #ifndef RPOLY_PLUS_PLUS_TEST_TEST_UTILS_H_
 #define RPOLY_PLUS_PLUS_TEST_TEST_UTILS_H_
 
-#include "libs/eigen/Eigen/Core"
+#include "libs/Eigen/Core"
 #include "gtest/gtest.h"
 
 namespace rpoly_plus_plus {

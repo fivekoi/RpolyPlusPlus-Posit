@@ -34,7 +34,7 @@
 #ifndef RPOLY_PLUS_PLUS_FIND_POLYNOMIAL_ROOTS_JENKINS_TRAUB_H_
 #define RPOLY_PLUS_PLUS_FIND_POLYNOMIAL_ROOTS_JENKINS_TRAUB_H_
 
-#include "libs/eigen/Eigen/Core"
+#include "libs/Eigen/Core"
 
 namespace rpoly_plus_plus {
 
