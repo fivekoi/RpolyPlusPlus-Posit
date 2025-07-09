@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "core": "cpp"
+        "core": "cpp",
+        "cholesky": "cpp",
+        "jacobi": "cpp"
     }
 }
