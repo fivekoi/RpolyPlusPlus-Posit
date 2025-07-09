@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/snap/cmake/1468/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/snap/cmake/1468/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/snap/cmake/1468/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/snap/cmake/1468/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/snap/cmake/1468/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/snap/cmake/1468/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/build/CMakeFiles /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/build//CMakeFiles/progress.marks
@@ -128,6 +173,71 @@ rpoly_plus_plus: cmake_check_build_system
 rpoly_plus_plus/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpoly_plus_plus.dir/build.make CMakeFiles/rpoly_plus_plus.dir/build
 .PHONY : rpoly_plus_plus/fast
+
+#=============================================================================
+# Target rules for targets named find_polynomial_roots_jenkins_traub_test
+
+# Build rule for target.
+find_polynomial_roots_jenkins_traub_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 find_polynomial_roots_jenkins_traub_test
+.PHONY : find_polynomial_roots_jenkins_traub_test
+
+# fast build rule for target.
+find_polynomial_roots_jenkins_traub_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/build.make CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/build
+.PHONY : find_polynomial_roots_jenkins_traub_test/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f libs/gtest/googlemock/CMakeFiles/gmock.dir/build.make libs/gtest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f libs/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make libs/gtest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f libs/gtest/googletest/CMakeFiles/gtest.dir/build.make libs/gtest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f libs/gtest/googletest/CMakeFiles/gtest_main.dir/build.make libs/gtest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
 src/find_polynomial_roots_jenkins_traub.o: src/find_polynomial_roots_jenkins_traub.cc.o
 .PHONY : src/find_polynomial_roots_jenkins_traub.o
@@ -177,6 +287,54 @@ src/polynomial.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpoly_plus_plus.dir/build.make CMakeFiles/rpoly_plus_plus.dir/src/polynomial.cc.s
 .PHONY : src/polynomial.cc.s
 
+test/find_polynomial_roots_jenkins_traub_test.o: test/find_polynomial_roots_jenkins_traub_test.cc.o
+.PHONY : test/find_polynomial_roots_jenkins_traub_test.o
+
+# target to build an object file
+test/find_polynomial_roots_jenkins_traub_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/build.make CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/test/find_polynomial_roots_jenkins_traub_test.cc.o
+.PHONY : test/find_polynomial_roots_jenkins_traub_test.cc.o
+
+test/find_polynomial_roots_jenkins_traub_test.i: test/find_polynomial_roots_jenkins_traub_test.cc.i
+.PHONY : test/find_polynomial_roots_jenkins_traub_test.i
+
+# target to preprocess a source file
+test/find_polynomial_roots_jenkins_traub_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/build.make CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/test/find_polynomial_roots_jenkins_traub_test.cc.i
+.PHONY : test/find_polynomial_roots_jenkins_traub_test.cc.i
+
+test/find_polynomial_roots_jenkins_traub_test.s: test/find_polynomial_roots_jenkins_traub_test.cc.s
+.PHONY : test/find_polynomial_roots_jenkins_traub_test.s
+
+# target to generate assembly for a file
+test/find_polynomial_roots_jenkins_traub_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/build.make CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/test/find_polynomial_roots_jenkins_traub_test.cc.s
+.PHONY : test/find_polynomial_roots_jenkins_traub_test.cc.s
+
+test/test_main.o: test/test_main.cc.o
+.PHONY : test/test_main.o
+
+# target to build an object file
+test/test_main.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/build.make CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/test/test_main.cc.o
+.PHONY : test/test_main.cc.o
+
+test/test_main.i: test/test_main.cc.i
+.PHONY : test/test_main.i
+
+# target to preprocess a source file
+test/test_main.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/build.make CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/test/test_main.cc.i
+.PHONY : test/test_main.cc.i
+
+test/test_main.s: test/test_main.cc.s
+.PHONY : test/test_main.s
+
+# target to generate assembly for a file
+test/test_main.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/build.make CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/test/test_main.cc.s
+.PHONY : test/test_main.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -184,7 +342,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... find_polynomial_roots_jenkins_traub_test"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
 	@echo "... rpoly_plus_plus"
 	@echo "... src/find_polynomial_roots_jenkins_traub.o"
 	@echo "... src/find_polynomial_roots_jenkins_traub.i"
@@ -192,6 +359,12 @@ help:
 	@echo "... src/polynomial.o"
 	@echo "... src/polynomial.i"
 	@echo "... src/polynomial.s"
+	@echo "... test/find_polynomial_roots_jenkins_traub_test.o"
+	@echo "... test/find_polynomial_roots_jenkins_traub_test.i"
+	@echo "... test/find_polynomial_roots_jenkins_traub_test.s"
+	@echo "... test/test_main.o"
+	@echo "... test/test_main.i"
+	@echo "... test/test_main.s"
 .PHONY : help
 
 

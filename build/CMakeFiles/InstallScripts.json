@@ -1,7 +1,10 @@
 {
 	"InstallScripts" : 
 	[
-		"/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/build/cmake_install.cmake"
+		"/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/build/cmake_install.cmake",
+		"/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/build/libs/gtest/cmake_install.cmake",
+		"/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/build/libs/gtest/googlemock/cmake_install.cmake",
+		"/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/build/libs/gtest/googletest/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
