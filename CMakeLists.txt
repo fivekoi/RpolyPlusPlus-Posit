@@ -12,6 +12,8 @@ SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
 # Local Eigen include
 include_directories(SYSTEM ${PROJECT_SOURCE_DIR}/libs/Eigen)
+# Local universal include
+include_directories(SYSTEM ${PROJECT_SOURCE_DIR}/libs/universal/include)
 
 # Use a larger inlining threshold for Clang, since it hobbles Eigen,
 # resulting in an unreasonably slow version of the blas routines. The

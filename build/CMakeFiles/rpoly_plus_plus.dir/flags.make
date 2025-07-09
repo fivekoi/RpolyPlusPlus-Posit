@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Drpoly_plus_plus_EXPORTS
 
-CXX_INCLUDES = -I/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit -I/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/gtest/googletest/include -isystem /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen
+CXX_INCLUDES = -I/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit -I/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/gtest/googletest/include -isystem /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen -isystem /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include
 
 CXX_FLAGS = -fPIC
 

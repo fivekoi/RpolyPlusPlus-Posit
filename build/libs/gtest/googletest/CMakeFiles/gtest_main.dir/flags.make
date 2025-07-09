@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit -isystem /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen -isystem /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/gtest/googletest/include -isystem /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/gtest/googletest
+CXX_INCLUDES = -I/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit -isystem /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen -isystem /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include -isystem /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/gtest/googletest/include -isystem /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/gtest/googletest
 
 CXX_FLAGS = -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
 
