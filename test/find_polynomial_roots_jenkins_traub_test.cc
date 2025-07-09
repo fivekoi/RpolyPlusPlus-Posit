@@ -33,7 +33,7 @@
 
 #include <algorithm>
 #include <vector>
-#include "libs/gtest/include/gtest/gtest.h"
+#include "gtest/gtest.h"
 
 #include "src/find_polynomial_roots_jenkins_traub.h"
 #include "src/polynomial.h"
