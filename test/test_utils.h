@@ -37,6 +37,8 @@
 #include "libs/Eigen/Core"
 #include "gtest/gtest.h"
 
+#include "src/reals.h"
+
 namespace rpoly_plus_plus {
 namespace test {
 
@@ -44,7 +46,7 @@ namespace test {
 template <typename Derived>
 void ExpectMatricesNear(const Eigen::MatrixBase<Derived>& a,
                         const Eigen::MatrixBase<Derived>& b,
-                        double tolerance) {
+                        Real tolerance) {
   ASSERT_EQ(a.rows(), b.rows());
   ASSERT_EQ(a.cols(), b.cols());
   for (int i = 0; i < a.rows(); i++)
@@ -54,9 +56,9 @@ void ExpectMatricesNear(const Eigen::MatrixBase<Derived>& a,
 }
 
 void ExpectArraysNear(int n,
-                      const double* a,
-                      const double* b,
-                      double tolerance) {
+                      const Real* a,
+                      const Real* b,
+                      Real tolerance) {
   ASSERT_GT(n, 0);
   for (int i = 0; i < n; i++) {
     EXPECT_NEAR(a[i], b[i], tolerance) << "i = " << i;
@@ -69,14 +71,14 @@ void ExpectArraysNear(int n,
 //
 // where max_norm_p and max_norm_q are the max norms of the arrays p
 // and q respectively.
-bool ArraysEqualUpToScale(int n, const double* p, const double* q,
-                          double tolerance) {
-  Eigen::Map<const Eigen::VectorXd> p_vec(p, n);
-  Eigen::Map<const Eigen::VectorXd> q_vec(q, n);
+bool ArraysEqualUpToScale(int n, const Real* p, const Real* q,
+                          Real tolerance) {
+  Eigen::Map<const VectorReal> p_vec(p, n);
+  Eigen::Map<const VectorReal> q_vec(q, n);
 
   // Use the cos term in the dot product to determine equality normalized for
   // scale.
-  const double cos_diff = p_vec.dot(q_vec) / (p_vec.norm() * q_vec.norm());
+  const Real cos_diff = p_vec.dot(q_vec) / (p_vec.norm() * q_vec.norm());
   return std::abs(cos_diff) >= 1.0 - tolerance;
 }
 

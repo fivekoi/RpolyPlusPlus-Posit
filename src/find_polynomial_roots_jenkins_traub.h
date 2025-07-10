@@ -34,6 +34,8 @@
 #ifndef RPOLY_PLUS_PLUS_FIND_POLYNOMIAL_ROOTS_JENKINS_TRAUB_H_
 #define RPOLY_PLUS_PLUS_FIND_POLYNOMIAL_ROOTS_JENKINS_TRAUB_H_
 
+#include "src/reals.h"
+
 #include "libs/Eigen/Core"
 
 namespace rpoly_plus_plus {
@@ -48,9 +50,9 @@ namespace rpoly_plus_plus {
 // exaggerate the roots. Once a root is found (or in the real-polynomial case, a
 // pair of roots) then it is divided from the polynomial and the process is
 // repeated.
-bool FindPolynomialRootsJenkinsTraub(const Eigen::VectorXd& polynomial,
-                                     Eigen::VectorXd* real_roots,
-                                     Eigen::VectorXd* complex_roots);
+bool FindPolynomialRootsJenkinsTraub(const VectorReal& polynomial,
+                                     VectorReal* real_roots,
+                                     VectorReal* complex_roots);
 
 }  // namespace rpoly_plus_plus
 

@@ -31,6 +31,7 @@
 // Please contact the author of this library if you have any questions.
 // Author: Chris Sweeney (cmsweeney@cs.ucsb.edu)
 
+#include "src/reals.h"
 #include "src/polynomial.h"
 
 #include "libs/Eigen/Core"
@@ -38,12 +39,8 @@
 
 namespace rpoly_plus_plus {
 
-using Eigen::MatrixXd;
-using Eigen::VectorXd;
-using Eigen::VectorXcd;
-
 // Remove leading terms with zero coefficients.
-VectorXd RemoveLeadingZeros(const VectorXd& polynomial_in) {
+VectorReal RemoveLeadingZeros(const VectorReal& polynomial_in) {
   int i = 0;
   while (i < (polynomial_in.size() - 1) && polynomial_in(i) == 0) {
     ++i;
@@ -51,17 +48,17 @@ VectorXd RemoveLeadingZeros(const VectorXd& polynomial_in) {
   return polynomial_in.tail(polynomial_in.size() - i);
 }
 
-VectorXd DifferentiatePolynomial(const VectorXd& polynomial) {
+VectorReal DifferentiatePolynomial(const VectorReal& polynomial) {
   const int degree = polynomial.rows() - 1;
 
   // Degree zero polynomials are constants, and their derivative does
   // not result in a smaller degree polynomial, just a degree zero
   // polynomial with value zero.
   if (degree == 0) {
-    return VectorXd::Zero(1);
+    return VectorReal::Zero(1);
   }
 
-  VectorXd derivative(degree);
+  VectorReal derivative(degree);
   for (int i = 0; i < degree; ++i) {
     derivative(i) = (degree - i) * polynomial(i);
   }
@@ -69,8 +66,8 @@ VectorXd DifferentiatePolynomial(const VectorXd& polynomial) {
   return derivative;
 }
 
-VectorXd MultiplyPolynomials(const VectorXd& poly1, const VectorXd& poly2) {
-  VectorXd multiplied_poly = VectorXd::Zero(poly1.size() + poly2.size() - 1);;
+VectorReal MultiplyPolynomials(const VectorReal& poly1, const VectorReal& poly2) {
+  VectorReal multiplied_poly = VectorReal::Zero(poly1.size() + poly2.size() - 1);;
   for (int i = 0; i < poly1.size(); i++) {
     for (int j = 0; j < poly2.size(); j++) {
       multiplied_poly.reverse()(i + j) +=
@@ -80,25 +77,25 @@ VectorXd MultiplyPolynomials(const VectorXd& poly1, const VectorXd& poly2) {
   return multiplied_poly;
 }
 
-VectorXd AddPolynomials(const VectorXd& poly1, const VectorXd& poly2) {
+VectorReal AddPolynomials(const VectorReal& poly1, const VectorReal& poly2) {
   if (poly1.size() > poly2.size()) {
-    VectorXd sum = poly1;
+    VectorReal sum = poly1;
     sum.tail(poly2.size()) += poly2;
     return sum;
   } else {
-    VectorXd sum = poly2;
+    VectorReal sum = poly2;
     sum.tail(poly1.size()) += poly1;
     return sum;
   }
 }
 
-double FindRootIterativeNewton(const Eigen::VectorXd& polynomial,
-                               const double x0,
-                               const double epsilon,
+Real FindRootIterativeNewton(const VectorReal& polynomial,
+                               const Real x0,
+                               const Real epsilon,
                                const int max_iterations) {
-  double root = x0;
-  const Eigen::VectorXd derivative = DifferentiatePolynomial(polynomial);
-  double prev;
+  Real root = x0;
+  const VectorReal derivative = DifferentiatePolynomial(polynomial);
+  Real prev;
   for (int i = 0; i < max_iterations; i++) {
     prev = root;
     root -= EvaluatePolynomial(polynomial, root) /

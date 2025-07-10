@@ -35,31 +35,29 @@
 #include <vector>
 #include "gtest/gtest.h"
 
+#include "src/reals.h"
 #include "src/find_polynomial_roots_jenkins_traub.h"
 #include "src/polynomial.h"
 #include "test/test_utils.h"
 
 namespace rpoly_plus_plus {
 
-using Eigen::MatrixXd;
-using Eigen::VectorXd;
-
 namespace {
 
 // For IEEE-754 doubles, machine precision is about 2e-16.
-const double kEpsilon = 1e-10;
-const double kEpsilonLoose = 1e-8;
+const Real kEpsilon = 1e-10; // TODO: it seems like these tests just comparae to expected double precision
+const Real kEpsilonLoose = 1e-8;
 
 // Return the constant polynomial p(x) = 1.23.
-VectorXd ConstantPolynomial(double value) {
-  VectorXd poly(1);
+VectorReal ConstantPolynomial(Real value) {
+  VectorReal poly(1);
   poly(0) = value;
   return poly;
 }
 
 // Return the polynomial p(x) = poly(x) * (x - root).
-VectorXd AddRealRoot(const VectorXd& poly, double root) {
-  VectorXd poly2(poly.size() + 1);
+VectorReal AddRealRoot(const VectorReal& poly, Real root) {
+  VectorReal poly2(poly.size() + 1);
   poly2.setZero();
   poly2.head(poly.size()) += poly;
   poly2.tail(poly.size()) -= root * poly;
@@ -68,9 +66,9 @@ VectorXd AddRealRoot(const VectorXd& poly, double root) {
 
 // Return the polynomial
 // p(x) = poly(x) * (x - real - imag*i) * (x - real + imag*i).
-VectorXd AddComplexRootPair(const VectorXd& poly, double real,
-                            double imag) {
-  VectorXd poly2(poly.size() + 2);
+VectorReal AddComplexRootPair(const VectorReal& poly, Real real,
+                            Real imag) {
+  VectorReal poly2(poly.size() + 2);
   poly2.setZero();
   // Multiply poly by x^2 - 2real + abs(real,imag)^2
   poly2.head(poly.size()) += poly;
@@ -81,8 +79,8 @@ VectorXd AddComplexRootPair(const VectorXd& poly, double real,
 
 // Sort the entries in a vector.
 // Needed because the roots are not returned in sorted order.
-VectorXd SortVector(const VectorXd& in) {
-  VectorXd out(in);
+VectorReal SortVector(const VectorReal& in) {
+  VectorReal out(in);
   std::sort(out.data(), out.data() + out.size());
   return out;
 }
@@ -92,16 +90,16 @@ VectorXd SortVector(const VectorXd& in) {
 // FindPolynomialRoots. If use_imaginary is false, NULL is passed as the
 // imaginary argument to FindPolynomialRoots.
 template <int N>
-void RunPolynomialTestRealRoots(const double (&real_roots)[N], bool use_real,
-                                bool use_imaginary, double epsilon) {
-  VectorXd real;
-  VectorXd imaginary;
-  VectorXd poly = ConstantPolynomial(1.23);
+void RunPolynomialTestRealRoots(const Real (&real_roots)[N], bool use_real,
+                                bool use_imaginary, Real epsilon) {
+  VectorReal real;
+  VectorReal imaginary;
+  VectorReal poly = ConstantPolynomial(1.23);
   for (int i = 0; i < N; ++i) {
     poly = AddRealRoot(poly, real_roots[i]);
   }
-  VectorXd* const real_ptr = use_real ? &real : NULL;
-  VectorXd* const imaginary_ptr = use_imaginary ? &imaginary : NULL;
+  VectorReal* const real_ptr = use_real ? &real : NULL;
+  VectorReal* const imaginary_ptr = use_imaginary ? &imaginary : NULL;
   bool success = FindPolynomialRootsJenkinsTraub(poly, real_ptr, imaginary_ptr);
 
   EXPECT_EQ(success, true);
@@ -112,7 +110,7 @@ void RunPolynomialTestRealRoots(const double (&real_roots)[N], bool use_real,
   }
   if (use_imaginary) {
     EXPECT_EQ(imaginary.size(), N);
-    const VectorXd zeros = VectorXd::Zero(N);
+    const VectorReal zeros = VectorReal::Zero(N);
     test::ExpectArraysNear(N, imaginary.data(), zeros.data(), epsilon);
   }
 }
@@ -122,18 +120,18 @@ void RunPolynomialTestRealRoots(const double (&real_roots)[N], bool use_real,
 TEST(Polynomial, InvalidPolynomialOfZeroLengthIsRejected) {
   // Vector poly(0) is an ambiguous constructor call, so
   // use the constructor with explicit column count.
-  VectorXd poly(0, 1);
-  VectorXd real;
-  VectorXd imag;
+  VectorReal poly(0, 1);
+  VectorReal real;
+  VectorReal imag;
   bool success = FindPolynomialRootsJenkinsTraub(poly, &real, &imag);
 
   EXPECT_EQ(success, false);
 }
 
 TEST(Polynomial, ConstantPolynomialReturnsNoRoots) {
-  VectorXd poly = ConstantPolynomial(1.23);
-  VectorXd real;
-  VectorXd imag;
+  VectorReal poly = ConstantPolynomial(1.23);
+  VectorReal real;
+  VectorReal imag;
   bool success = FindPolynomialRootsJenkinsTraub(poly, &real, &imag);
 
   EXPECT_EQ(success, true);
@@ -142,40 +140,40 @@ TEST(Polynomial, ConstantPolynomialReturnsNoRoots) {
 }
 
 TEST(Polynomial, LinearPolynomialWithPositiveRootWorks) {
-  const double roots[1] = { 42.42 };
+  const Real roots[1] = { 42.42 };
   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
 }
 
 TEST(Polynomial, LinearPolynomialWithNegativeRootWorks) {
-  const double roots[1] = { -42.42 };
+  const Real roots[1] = { -42.42 };
   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
 }
 
 TEST(Polynomial, QuadraticPolynomialWithPositiveRootsWorks) {
-  const double roots[2] = { 1.0, 42.42 };
+  const Real roots[2] = { 1.0, 42.42 };
   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
 }
 
 TEST(Polynomial, QuadraticPolynomialWithOneNegativeRootWorks) {
-  const double roots[2] = { -42.42, 1.0 };
+  const Real roots[2] = { -42.42, 1.0 };
   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
 }
 
 TEST(Polynomial, QuadraticPolynomialWithTwoNegativeRootsWorks) {
-  const double roots[2] = { -42.42, -1.0 };
+  const Real roots[2] = { -42.42, -1.0 };
   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
 }
 
 TEST(Polynomial, QuadraticPolynomialWithCloseRootsWorks) {
-  const double roots[2] = { 42.42, 42.43 };
+  const Real roots[2] = { 42.42, 42.43 };
   RunPolynomialTestRealRoots(roots, true, false, kEpsilonLoose);
 }
 
 TEST(Polynomial, QuadraticPolynomialWithComplexRootsWorks) {
-  VectorXd real;
-  VectorXd imag;
+  VectorReal real;
+  VectorReal imag;
 
-  VectorXd poly = ConstantPolynomial(1.23);
+  VectorReal poly = ConstantPolynomial(1.23);
   poly = AddComplexRootPair(poly, 42.42, 4.2);
   bool success = FindPolynomialRootsJenkinsTraub(poly, &real, &imag);
 
@@ -190,51 +188,51 @@ TEST(Polynomial, QuadraticPolynomialWithComplexRootsWorks) {
 }
 
 TEST(Polynomial, QuarticPolynomialWorks) {
-  const double roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
+  const Real roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
   RunPolynomialTestRealRoots(roots, true, true, kEpsilonLoose);
 }
 
 TEST(Polynomial, QuarticPolynomialWithTwoClustersOfCloseRootsWorks) {
-  const double roots[4] = { 1.23e-1, 2.46e-1, 1.23e+5, 2.46e+5 };
+  const Real roots[4] = { 1.23e-1, 2.46e-1, 1.23e+5, 2.46e+5 };
   RunPolynomialTestRealRoots(roots, true, true, kEpsilonLoose);
 }
 
 TEST(Polynomial, QuarticPolynomialWithTwoZeroRootsWorks) {
-  const double roots[4] = { -42.42, 0.0, 0.0, 42.42 };
+  const Real roots[4] = { -42.42, 0.0, 0.0, 42.42 };
   RunPolynomialTestRealRoots(roots, true, true, kEpsilonLoose);
 }
 
 TEST(Polynomial, QuarticMonomialWorks) {
-  const double roots[4] = { 0.0, 0.0, 0.0, 0.0 };
+  const Real roots[4] = { 0.0, 0.0, 0.0, 0.0 };
   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
 }
 
 TEST(Polynomial, NullPointerAsImaginaryPartWorks) {
-  const double roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
+  const Real roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
   RunPolynomialTestRealRoots(roots, true, false, kEpsilonLoose);
 }
 
 TEST(Polynomial, NullPointerAsRealPartWorks) {
-  const double roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
+  const Real roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
   RunPolynomialTestRealRoots(roots, false, true, kEpsilon);
 }
 
 TEST(Polynomial, BothOutputArgumentsNullWorks) {
-  const double roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
+  const Real roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
   RunPolynomialTestRealRoots(roots, false, false, kEpsilon);
 }
 
 TEST(Polynomial, JenkinsTraubManyRoots) {
   static const int N = 25;
-  VectorXd poly = ConstantPolynomial(1.23);
-  VectorXd roots = VectorXd::Random(N);
+  VectorReal poly = ConstantPolynomial(1.23);
+  VectorReal roots = VectorReal::Random(N);
   roots = SortVector(roots);
 
   for (int i = 0; i < N; ++i) {
     poly = AddRealRoot(poly, roots[i]);
   }
 
-  VectorXd real;
+  VectorReal real;
   bool success = FindPolynomialRootsJenkinsTraub(poly, &real, NULL);
   real = SortVector(real);
   EXPECT_EQ(success, true);
@@ -245,9 +243,9 @@ TEST(Polynomial, JenkinsTraubManyRoots) {
 }
 
 TEST(Polynomial, HardPolynomial1) {
-  Eigen::VectorXd polynomial(11);
-  Eigen::VectorXd roots_re(10);
-  Eigen::VectorXd roots_im(10);
+  VectorReal polynomial(11);
+  VectorReal roots_re(10);
+  VectorReal roots_im(10);
 
   polynomial(10) = -52412.8655144021;
   polynomial(9) = -28342.548095425875;
@@ -266,9 +264,9 @@ TEST(Polynomial, HardPolynomial1) {
 }
 
 TEST(Polynomial, HardPolynomial2) {
-  Eigen::VectorXd polynomial(20);
-  Eigen::VectorXd roots_re(19);
-  Eigen::VectorXd roots_im(19);
+  VectorReal polynomial(20);
+  VectorReal roots_re(19);
+  VectorReal roots_im(19);
 
   polynomial(19) = -3.3501738067312306e8;
   polynomial(18) = -6.884086124142883e8;
@@ -297,7 +295,7 @@ TEST(Polynomial, HardPolynomial2) {
 
 // This test polynomial was provided by a user.
 TEST(Polynomial, JenkinsTraub4Roots1) {
-  const double roots[4] = {1.0843989379558703, 1.0844294564653463,
+  const Real roots[4] = {1.0843989379558703, 1.0844294564653463,
                            1.3072756126590779, 1.4643848994415114};
   RunPolynomialTestRealRoots(roots, true, false, kEpsilonLoose);
 }
@@ -306,8 +304,8 @@ TEST(Polynomial, JenkinsTraub4Roots1) {
 TEST(Polynomial, JenkinsTraub4Roots2) {
   static const int N = 4;
   for (int j = 0; j < 10000; ++j) {
-    VectorXd poly = ConstantPolynomial(1.23);
-    VectorXd roots = VectorXd::Random(N);
+    VectorReal poly = ConstantPolynomial(1.23);
+    VectorReal roots = VectorReal::Random(N);
     for (int i = 0; i < N; ++i) {
         roots(i) *= 0.5;
         roots(i) += 1.0;
@@ -319,7 +317,7 @@ TEST(Polynomial, JenkinsTraub4Roots2) {
       poly = AddRealRoot(poly, roots[i]);
     }
 
-    VectorXd real;
+    VectorReal real;
     const bool success = FindPolynomialRootsJenkinsTraub(poly, &real, NULL);
     EXPECT_EQ(success, true);
     real = SortVector(real);

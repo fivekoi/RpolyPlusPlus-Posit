@@ -35,6 +35,7 @@
 #ifndef RPOLY_PLUS_PLUS_POLYNOMIAL_H_
 #define RPOLY_PLUS_PLUS_POLYNOMIAL_H_
 
+#include "src/reals.h"
 #include "libs/Eigen/Core"
 
 namespace rpoly_plus_plus {
@@ -46,11 +47,11 @@ namespace rpoly_plus_plus {
 // and are given by a vector of coefficients of size N + 1.
 
 // Remove leading terms with zero coefficients.
-Eigen::VectorXd RemoveLeadingZeros(const Eigen::VectorXd& polynomial_in);
+VectorReal RemoveLeadingZeros(const VectorReal& polynomial_in);
 
 // Evaluate the polynomial at x using the Horner scheme.
 template <typename T>
-inline T EvaluatePolynomial(const Eigen::VectorXd& polynomial, const T& x) {
+inline T EvaluatePolynomial(const VectorReal& polynomial, const T& x) {
   T v = 0.0;
   for (int i = 0; i < polynomial.size(); ++i) {
     v = v * x + polynomial(i);
@@ -60,20 +61,20 @@ inline T EvaluatePolynomial(const Eigen::VectorXd& polynomial, const T& x) {
 
 // Return the derivative of the given polynomial. It is assumed that
 // the input polynomial is at least of degree zero.
-Eigen::VectorXd DifferentiatePolynomial(const Eigen::VectorXd& polynomial);
+VectorReal DifferentiatePolynomial(const VectorReal& polynomial);
 
 // Multiplies the two polynoimals together.
-Eigen::VectorXd MultiplyPolynomials(const Eigen::VectorXd& poly1,
-                                    const Eigen::VectorXd& poly2);
+VectorReal MultiplyPolynomials(const VectorReal& poly1,
+                                    const VectorReal& poly2);
 
 // Adds two polynomials together.
-Eigen::VectorXd AddPolynomials(const Eigen::VectorXd& poly1,
-                               const Eigen::VectorXd& poly2);
+VectorReal AddPolynomials(const VectorReal& poly1,
+                               const VectorReal& poly2);
 
 // Find a root from the starting guess using Newton's method.
-double FindRootIterativeNewton(const Eigen::VectorXd& polynomial,
-                               const double x0,
-                               const double epsilon,
+Real FindRootIterativeNewton(const VectorReal& polynomial,
+                               const Real x0,
+                               const Real epsilon,
                                const int max_iterations);
 
 }  // namespace rpoly_plus_plus
