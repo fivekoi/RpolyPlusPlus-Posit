@@ -77,7 +77,7 @@ void FindQuadraticPolynomialRoots(const Real a,
                                   const Real c,
                                   std::complex<Real>* roots) {
   const Real D = b * b - 4 * a * c;
-  const Real sqrt_D = std::sqrt(std::abs(D));
+  const Real sqrt_D = sw::universal::sqrt(sw::universal::abs(D));
 
   // Real roots.
   if (D >= 0) {
@@ -145,8 +145,16 @@ void QuadraticSyntheticDivision(const VectorReal& polynomial,
 
 // Determines whether the iteration has converged by examining the three most
 // recent values for convergence.
-template<typename T>
-bool HasConverged(const T& sequence) {
+bool HasConverged(const VectorReal3D& sequence) {
+  const bool convergence_condition_1 =
+      sw::universal::abs(sequence(1) - sequence(0)) < sw::universal::abs(sequence(0)) / 2.0;
+  const bool convergence_condition_2 =
+      sw::universal::abs(sequence(2) - sequence(1)) < sw::universal::abs(sequence(1)) / 2.0;
+
+  // If the sequence has converged then return true.
+  return convergence_condition_1 && convergence_condition_2;
+}
+bool HasConverged(const VectorReal3cD& sequence) {
   const bool convergence_condition_1 =
       std::abs(sequence(1) - sequence(0)) < std::abs(sequence(0)) / 2.0;
   const bool convergence_condition_2 =
@@ -163,8 +171,26 @@ bool HasConverged(const T& sequence) {
 //
 // Nikolajsen, Jorgen L. "New stopping criteria for iterative root finding."
 // Royal Society open science (2014)
-template <typename T>
-bool HasRootConverged(const std::vector<T>& roots) {
+bool HasRootConverged(const std::vector<Real>& roots) {
+  static const Real kRootMagnitudeTolerance = 1e-8;
+  if (roots.size() != 3) {
+    return false;
+  }
+
+  const Real e_i = sw::universal::abs(roots[2] - roots[1]);
+  const Real e_i_minus_1 = sw::universal::abs(roots[1] - roots[0]);
+  const Real mag_root = sw::universal::abs(roots[1]);
+  if (e_i <= e_i_minus_1) {
+    if (mag_root < kRootMagnitudeTolerance) {
+      return e_i < kAbsoluteTolerance;
+    } else {
+      return e_i / mag_root <= kRelativeTolerance;
+    }
+  }
+
+  return false;
+}
+bool HasRootConverged(const std::vector<std::complex<Real>>& roots) {
   static const Real kRootMagnitudeTolerance = 1e-8;
   if (roots.size() != 3) {
     return false;
@@ -318,7 +344,7 @@ class JenkinsTraubSolver {
   // nearly equal since the root pairs are complex conjugates. This tolerance
   // measures how much the real values may diverge before consider the quadratic
   // shift to be failed.
-  static constexpr Real kRootPairTolerance = 0.01;
+  static constexpr double kRootPairTolerance = 0.01;
 };
 
 bool JenkinsTraubSolver::ExtractRoots() {
@@ -369,7 +395,7 @@ bool JenkinsTraubSolver::ExtractRoots() {
     std::complex<Real> root;
     ConvergenceType convergence = NO_CONVERGENCE;
     for (int j = 0; j < kMaxFixedShiftRestarts; j++) {
-      root = root_radius * std::complex<Real>(std::cos(phi), std::sin(phi));
+      root = root_radius * std::complex<Real>(sw::universal::cos(phi), sw::universal::sin(phi));
       convergence = ApplyFixedShiftToKPolynomial(
           root, kFixedShiftIterationMultiplier * (i + 1));
       if (convergence != NO_CONVERGENCE) {
@@ -535,16 +561,16 @@ bool JenkinsTraubSolver::ApplyQuadraticShiftToKPolynomial(
     FindQuadraticPolynomialRoots(sigma_(0), sigma_(1), sigma_(2), roots);
 
     // Check that the roots are close. If not, then try a linear shift.
-    if (std::abs(std::abs(roots[0].real()) - std::abs(roots[1].real())) >
-        kRootPairTolerance * std::abs(roots[1].real())) {
+    if (sw::universal::abs(sw::universal::abs(roots[0].real()) - sw::universal::abs(roots[1].real())) >
+        kRootPairTolerance * sw::universal::abs(roots[1].real())) {
       return ApplyLinearShiftToKPolynomial(root, kMaxLinearShiftIterations);
     }
 
     // If the iteration is stalling at a root pair then apply a few fixed shift
     // iterations to help convergence.
     poly_at_root =
-        std::abs(a_ - roots[0].real() * b_) + std::abs(roots[0].imag() * b_);
-    const Real rel_step = std::abs((sigma_(2) - prev_v) / sigma_(2));
+        sw::universal::abs(a_ - roots[0].real() * b_) + sw::universal::abs(roots[0].imag() * b_);
+    const Real rel_step = sw::universal::abs((sigma_(2) - prev_v) / sigma_(2));
     if (!tried_fixed_shifts && rel_step < kTinyRelativeStep &&
         prev_poly_at_root > poly_at_root) {
       tried_fixed_shifts = true;
@@ -616,7 +642,7 @@ bool JenkinsTraubSolver::ApplyLinearShiftToKPolynomial(
 
     // If the root is exactly the root then end early. Otherwise, the k
     // polynomial will be filled with inf or nans.
-    if (std::abs(polynomial_at_root) <= kAbsoluteTolerance) {
+    if (sw::universal::abs(polynomial_at_root) <= kAbsoluteTolerance) {
       AddRootToOutput(real_root, 0);
       polynomial_ = deflated_polynomial;
       return true;
@@ -647,8 +673,8 @@ bool JenkinsTraubSolver::ApplyLinearShiftToKPolynomial(
     // Real real root of the form (z - x^2). Attempt a quadratic variable
     // shift from the current estimate of the root.
     if (i >= 2 &&
-        std::abs(delta_root) < 0.001 * std::abs(real_root) &&
-        std::abs(prev_polynomial_at_root) < std::abs(polynomial_at_root)) {
+        sw::universal::abs(delta_root) < 0.001 * sw::universal::abs(real_root) &&
+        sw::universal::abs(prev_polynomial_at_root) < sw::universal::abs(polynomial_at_root)) {
       const std::complex<Real> new_root(real_root, 0);
       return ApplyQuadraticShiftToKPolynomial(new_root,
                                               kMaxQuadraticShiftIterations);

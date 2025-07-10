@@ -309,39 +309,8 @@ CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/test/find_polynomial_roo
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/gtest/googletest/include/gtest/gtest_pred_impl.h \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/gtest/googletest/include/gtest/gtest_prod.h \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/src/reals.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/posit.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/compiler.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/architecture.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/bit_cast.hpp \
- /usr/include/c++/13/cstring \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/long_double.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/number_traits.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/metaprogramming.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/arithmetic_traits.hpp \
- /usr/include/c++/13/iomanip /usr/include/c++/13/bits/quoted_string.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/integer_type_tag.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_type_tag.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/common/number_traits_reports.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/exceptions.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/common/exceptions.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/posit_fwd.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/posit_parse.hpp \
- /usr/include/c++/13/regex /usr/include/c++/13/bitset \
- /usr/include/c++/13/stack /usr/include/c++/13/deque \
- /usr/include/c++/13/bits/stl_deque.h /usr/include/c++/13/bits/deque.tcc \
- /usr/include/c++/13/bits/stl_stack.h \
- /usr/include/c++/13/bits/regex_constants.h \
- /usr/include/c++/13/bits/regex_error.h \
- /usr/include/c++/13/bits/regex_automaton.h \
- /usr/include/c++/13/bits/regex_automaton.tcc \
- /usr/include/c++/13/bits/regex_scanner.h \
- /usr/include/c++/13/bits/regex_scanner.tcc \
- /usr/include/c++/13/bits/regex_compiler.h \
- /usr/include/c++/13/bits/regex_compiler.tcc \
- /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
- /usr/include/c++/13/bits/regex_executor.h \
- /usr/include/c++/13/bits/regex_executor.tcc \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/posit_impl.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/mathlib_shim.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/abs.hpp \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -364,77 +333,23 @@ CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/test/find_polynomial_roo
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/algorithm/trace_constants.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/bitblock/bitblock.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/uint128/uint128.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/boolean_logic_operators.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/bitblock/exceptions.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/value/value.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/support/decimal.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/find_msb.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_parameter.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_msvc.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_clang.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_gcc.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_intelicc.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_riscv.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_ibmxlc.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_hpcc.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_pgi.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_sunpro.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_decoder.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/extract_fields.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/shared/nan_encoding.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/shared/infinite_encoding.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/set_fields.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconst_bitcast.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_float.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/color_print.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_double.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_longdouble.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconstexpr/extract_fp_components.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconstexpr/msvc_long_double.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconstexpr/clang_long_double.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconstexpr/gcc_long_double.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconstexpr/riscv_long_double.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/integers.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_parameter_ostream.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/manipulators.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/attributes.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_numeric.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/shared/specific_value_encoding.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/positFraction.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/positExponent.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/positRegime.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/attributes.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/posit_traits.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/integral_constant.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/numeric_limits.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/specializations.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/manipulators.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/quire/exceptions.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/quire.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/fdp.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/mathlib.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/classify.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/complex.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/classify.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/complex.hpp \
  /usr/include/c++/13/complex \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/error_and_gamma.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/exponent.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/fractional.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/hyperbolic.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/hypot.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/logarithm.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/minmax.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/next.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/pow.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/sqrt.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/sqrt_tables.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/trigonometry.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/constants/double_constants.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/truncate.hpp \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/twoSum.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/error_and_gamma.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/exponent.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/fractional.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/hyperbolic.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/hypot.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/logarithm.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/minmax.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/next.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/pow.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/sqrt.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/trigonometry.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/stub/truncate.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/complex/manipulators.hpp \
+ /usr/include/c++/13/iomanip /usr/include/c++/13/bits/quoted_string.h \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/Core \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/DisableStupidWarnings.h \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/Macros.h \
@@ -444,6 +359,7 @@ CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/test/find_polynomial_roo
  /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/MKL_support.h \
+ /usr/include/c++/13/cstring \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/Constants.h \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/Meta.h \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/ForwardDeclarations.h \
@@ -567,6 +483,107 @@ CMakeFiles/find_polynomial_roots_jenkins_traub_test.dir/test/find_polynomial_roo
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/StlIterators.h \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/GlobalFunctions.h \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/ReenableStupidWarnings.h \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/posit.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/compiler.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/architecture.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/bit_cast.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/long_double.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/number_traits.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/metaprogramming.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/arithmetic_traits.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/integer_type_tag.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_type_tag.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/common/number_traits_reports.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/exceptions.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/common/exceptions.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/posit_fwd.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/posit_parse.hpp \
+ /usr/include/c++/13/regex /usr/include/c++/13/bitset \
+ /usr/include/c++/13/stack /usr/include/c++/13/deque \
+ /usr/include/c++/13/bits/stl_deque.h /usr/include/c++/13/bits/deque.tcc \
+ /usr/include/c++/13/bits/stl_stack.h \
+ /usr/include/c++/13/bits/regex_constants.h \
+ /usr/include/c++/13/bits/regex_error.h \
+ /usr/include/c++/13/bits/regex_automaton.h \
+ /usr/include/c++/13/bits/regex_automaton.tcc \
+ /usr/include/c++/13/bits/regex_scanner.h \
+ /usr/include/c++/13/bits/regex_scanner.tcc \
+ /usr/include/c++/13/bits/regex_compiler.h \
+ /usr/include/c++/13/bits/regex_compiler.tcc \
+ /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
+ /usr/include/c++/13/bits/regex_executor.h \
+ /usr/include/c++/13/bits/regex_executor.tcc \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/posit_impl.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/algorithm/trace_constants.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/bitblock/bitblock.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/uint128/uint128.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/boolean_logic_operators.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/bitblock/exceptions.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/value/value.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/support/decimal.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/find_msb.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_parameter.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_msvc.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_clang.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_gcc.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_intelicc.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_riscv.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_ibmxlc.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_hpcc.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_pgi.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/compiler/ieee754_sunpro.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_decoder.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/extract_fields.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/shared/nan_encoding.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/shared/infinite_encoding.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/set_fields.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconst_bitcast.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_float.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/utility/color_print.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_double.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_longdouble.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconstexpr/extract_fp_components.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconstexpr/msvc_long_double.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconstexpr/clang_long_double.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconstexpr/gcc_long_double.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconstexpr/riscv_long_double.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/integers.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_parameter_ostream.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/manipulators.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/attributes.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/ieee754_numeric.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/shared/specific_value_encoding.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/positFraction.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/positExponent.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/positRegime.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/attributes.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/posit_traits.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/integral_constant.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/numeric_limits.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/specializations.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/manipulators.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/quire/exceptions.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/quire.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/fdp.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/mathlib.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/classify.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/complex.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/error_and_gamma.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/exponent.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/fractional.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/hyperbolic.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/hypot.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/logarithm.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/minmax.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/next.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/pow.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/sqrt.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/sqrt_tables.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/trigonometry.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/constants/double_constants.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/math/truncate.hpp \
+ /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/twoSum.hpp \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/src/find_polynomial_roots_jenkins_traub.h \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/src/polynomial.h \
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/test/test_utils.h

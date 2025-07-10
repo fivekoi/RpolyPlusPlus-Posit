@@ -52,7 +52,7 @@ VectorReal RemoveLeadingZeros(const VectorReal& polynomial_in);
 // Evaluate the polynomial at x using the Horner scheme.
 template <typename T>
 inline T EvaluatePolynomial(const VectorReal& polynomial, const T& x) {
-  T v = 0.0;
+  T v = static_cast<T>(0.0);
   for (int i = 0; i < polynomial.size(); ++i) {
     v = v * x + polynomial(i);
   }

@@ -61,7 +61,7 @@ void ExpectArraysNear(int n,
                       Real tolerance) {
   ASSERT_GT(n, 0);
   for (int i = 0; i < n; i++) {
-    EXPECT_NEAR(a[i], b[i], tolerance) << "i = " << i;
+    EXPECT_NEAR(static_cast<double>(a[i]), static_cast<double>(b[i]), static_cast<double>(tolerance)) << "i = " << i;
   }
 }
 
@@ -79,7 +79,7 @@ bool ArraysEqualUpToScale(int n, const Real* p, const Real* q,
   // Use the cos term in the dot product to determine equality normalized for
   // scale.
   const Real cos_diff = p_vec.dot(q_vec) / (p_vec.norm() * q_vec.norm());
-  return std::abs(cos_diff) >= 1.0 - tolerance;
+  return sw::universal::abs(cos_diff) >= 1.0 - tolerance;
 }
 
 }  // namespace test

@@ -100,7 +100,7 @@ Real FindRootIterativeNewton(const VectorReal& polynomial,
     prev = root;
     root -= EvaluatePolynomial(polynomial, root) /
             EvaluatePolynomial(derivative, root);
-    if (std::abs(prev - root) < epsilon) {
+    if (sw::universal::abs(prev - root) < epsilon) {
       break;
     }
   }

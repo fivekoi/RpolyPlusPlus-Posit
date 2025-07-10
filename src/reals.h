@@ -1,13 +1,14 @@
 #ifndef REALS_H
 #define REALS_H
 
-#include "universal/number/posit/posit.hpp"
-#include "universal/math/functions.hpp"
-
+#include "libs/universal/include/universal/math/mathlib_shim.hpp"
+#include "libs/universal/include/universal/math/complex/manipulators.hpp"
 #include "libs/Eigen/Core"
 
-// double, sw::universal::posit<64, 4>
-using Real = sw::universal::posit<64, 4>;
+#include "libs/universal/include/universal/number/posit/posit.hpp"
+
+// double, sw::universal::posit<32, 2>
+using Real = sw::universal::posit<64, 2>;
 
 using VectorReal = Eigen::Matrix<Real, -1, 1>;
 using VectorReal3D = Eigen::Matrix<Real, 3, 1>;
