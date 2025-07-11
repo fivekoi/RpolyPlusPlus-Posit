@@ -42,7 +42,7 @@ namespace rpoly_plus_plus {
 // Remove leading terms with zero coefficients.
 VectorReal RemoveLeadingZeros(const VectorReal& polynomial_in) {
   int i = 0;
-  while (i < (polynomial_in.size() - 1) && polynomial_in(i) == 0) {
+  while (i < (polynomial_in.size() - 1) && polynomial_in(i) == Real(0)) {
     ++i;
   }
   return polynomial_in.tail(polynomial_in.size() - i);
@@ -100,7 +100,12 @@ Real FindRootIterativeNewton(const VectorReal& polynomial,
     prev = root;
     root -= EvaluatePolynomial(polynomial, root) /
             EvaluatePolynomial(derivative, root);
-    if (sw::universal::abs(prev - root) < epsilon) {
+    if (
+      #ifdef SW_MATH
+      sw::universal::abs(prev - root) < epsilon
+      #endif
+
+    ) {
       break;
     }
   }
