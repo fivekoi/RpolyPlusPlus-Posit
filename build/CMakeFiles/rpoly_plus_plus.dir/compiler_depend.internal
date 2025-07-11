@@ -133,7 +133,6 @@ CMakeFiles/rpoly_plus_plus.dir/src/find_polynomial_roots_jenkins_traub.cc.o
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/common/number_traits_reports.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/bitblock/bitblock.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/bitblock/exceptions.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/blockbinary/blockbinary.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/uint128/uint128.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/value/value.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/complex/manipulators.hpp
@@ -185,18 +184,6 @@ CMakeFiles/rpoly_plus_plus.dir/src/find_polynomial_roots_jenkins_traub.cc.o
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconstexpr/riscv_long_double.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/set_fields.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/algorithm/trace_constants.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/attributes.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/bfloat.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/bfloat16_fwd.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/bfloat16_impl.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/bfloat8_fwd.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/bfloat8_impl.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/exceptions.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/manipulators.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/math/next.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/math/pow.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/mathlib.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/numeric_limits.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/attributes.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/exceptions.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/fdp.hpp
@@ -234,8 +221,6 @@ CMakeFiles/rpoly_plus_plus.dir/src/find_polynomial_roots_jenkins_traub.cc.o
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/shared/specific_value_encoding.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/support/decimal.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/arithmetic_traits.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/bfloat16_traits.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/bfloat8_traits.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/integral_constant.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/metaprogramming.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/number_traits.hpp
@@ -713,7 +698,6 @@ CMakeFiles/rpoly_plus_plus.dir/src/polynomial.cc.o
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/common/number_traits_reports.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/bitblock/bitblock.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/bitblock/exceptions.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/blockbinary/blockbinary.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/uint128/uint128.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/internal/value/value.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/math/complex/manipulators.hpp
@@ -765,18 +749,6 @@ CMakeFiles/rpoly_plus_plus.dir/src/polynomial.cc.o
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/nonconstexpr/riscv_long_double.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/native/set_fields.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/algorithm/trace_constants.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/attributes.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/bfloat.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/bfloat16_fwd.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/bfloat16_impl.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/bfloat8_fwd.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/bfloat8_impl.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/exceptions.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/manipulators.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/math/next.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/math/pow.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/mathlib.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/bfloat/numeric_limits.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/attributes.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/exceptions.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/posit/fdp.hpp
@@ -814,8 +786,6 @@ CMakeFiles/rpoly_plus_plus.dir/src/polynomial.cc.o
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/shared/specific_value_encoding.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/number/support/decimal.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/arithmetic_traits.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/bfloat16_traits.hpp
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/bfloat8_traits.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/integral_constant.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/metaprogramming.hpp
  /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/universal/include/universal/traits/number_traits.hpp
