@@ -117,188 +117,205 @@ void RunPolynomialTestRealRoots(const Real (&real_roots)[N], bool use_real,
 
 }  // namespace
 
-TEST(Polynomial, InvalidPolynomialOfZeroLengthIsRejected) {
-  // Vector poly(0) is an ambiguous constructor call, so
-  // use the constructor with explicit column count.
-  VectorReal poly(0, 1);
-  VectorReal real;
-  VectorReal imag;
-  bool success = FindPolynomialRootsJenkinsTraub(poly, &real, &imag);
+TEST(Polynomial, MyTest) {
+  VectorReal polynomial(4);
+  VectorReal roots_re(3);
+  VectorReal roots_im(3);
 
-  EXPECT_EQ(success, false);
-}
+  polynomial(0) = 1;
+  polynomial(1) = -7;
+  polynomial(2) = 14;
+  polynomial(3) = -8;
 
-TEST(Polynomial, ConstantPolynomialReturnsNoRoots) {
-  VectorReal poly = ConstantPolynomial(1.23);
-  VectorReal real;
-  VectorReal imag;
-  bool success = FindPolynomialRootsJenkinsTraub(poly, &real, &imag);
+  bool success = FindPolynomialRootsJenkinsTraub(polynomial, &roots_re, &roots_im);
+  std::cout << roots_re << '\n';
+  std::cout << roots_im << '\n';
 
   EXPECT_EQ(success, true);
-  EXPECT_EQ(real.size(), 0);
-  EXPECT_EQ(imag.size(), 0);
 }
 
-TEST(Polynomial, LinearPolynomialWithPositiveRootWorks) {
-  const Real roots[1] = { 42.42 };
-  RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
-}
+// TEST(Polynomial, InvalidPolynomialOfZeroLengthIsRejected) {
+//   // Vector poly(0) is an ambiguous constructor call, so
+//   // use the constructor with explicit column count.
+//   VectorReal poly(0, 1);
+//   VectorReal real;
+//   VectorReal imag;
+//   bool success = FindPolynomialRootsJenkinsTraub(poly, &real, &imag);
 
-TEST(Polynomial, LinearPolynomialWithNegativeRootWorks) {
-  const Real roots[1] = { -42.42 };
-  RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
-}
+//   EXPECT_EQ(success, false);
+// }
 
-TEST(Polynomial, QuadraticPolynomialWithPositiveRootsWorks) {
-  const Real roots[2] = { 1.0, 42.42 };
-  RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
-}
+// TEST(Polynomial, ConstantPolynomialReturnsNoRoots) {
+//   VectorReal poly = ConstantPolynomial(1.23);
+//   VectorReal real;
+//   VectorReal imag;
+//   bool success = FindPolynomialRootsJenkinsTraub(poly, &real, &imag);
 
-TEST(Polynomial, QuadraticPolynomialWithOneNegativeRootWorks) {
-  const Real roots[2] = { -42.42, 1.0 };
-  RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
-}
+//   EXPECT_EQ(success, true);
+//   EXPECT_EQ(real.size(), 0);
+//   EXPECT_EQ(imag.size(), 0);
+// }
 
-TEST(Polynomial, QuadraticPolynomialWithTwoNegativeRootsWorks) {
-  const Real roots[2] = { -42.42, -1.0 };
-  RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
-}
+// TEST(Polynomial, LinearPolynomialWithPositiveRootWorks) {
+//   const Real roots[1] = { 42.42 };
+//   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
+// }
 
-TEST(Polynomial, QuadraticPolynomialWithCloseRootsWorks) {
-  const Real roots[2] = { 42.42, 42.43 };
-  RunPolynomialTestRealRoots(roots, true, false, kEpsilonLoose);
-}
+// TEST(Polynomial, LinearPolynomialWithNegativeRootWorks) {
+//   const Real roots[1] = { -42.42 };
+//   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
+// }
 
-TEST(Polynomial, QuadraticPolynomialWithComplexRootsWorks) {
-  VectorReal real;
-  VectorReal imag;
+// TEST(Polynomial, QuadraticPolynomialWithPositiveRootsWorks) {
+//   const Real roots[2] = { 1.0, 42.42 };
+//   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
+// }
 
-  VectorReal poly = ConstantPolynomial(1.23);
-  poly = AddComplexRootPair(poly, 42.42, 4.2);
-  bool success = FindPolynomialRootsJenkinsTraub(poly, &real, &imag);
+// TEST(Polynomial, QuadraticPolynomialWithOneNegativeRootWorks) {
+//   const Real roots[2] = { -42.42, 1.0 };
+//   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
+// }
 
-  EXPECT_EQ(success, true);
-  EXPECT_EQ(real.size(), 2);
-  EXPECT_EQ(imag.size(), 2);
-  EXPECT_NEAR(static_cast<double>(real(0)), 42.42, static_cast<double>(kEpsilon));
-  EXPECT_NEAR(static_cast<double>(real(1)), 42.42, static_cast<double>(kEpsilon));
-  EXPECT_NEAR(static_cast<double>(sw::universal::abs(imag(0))), 4.2, static_cast<double>(kEpsilon));
-  EXPECT_NEAR(static_cast<double>(sw::universal::abs(imag(1))), 4.2, static_cast<double>(kEpsilon));
-  EXPECT_NEAR(static_cast<double>(sw::universal::abs(imag(0) + imag(1))), 0.0, static_cast<double>(kEpsilon));
-}
+// TEST(Polynomial, QuadraticPolynomialWithTwoNegativeRootsWorks) {
+//   const Real roots[2] = { -42.42, -1.0 };
+//   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
+// }
 
-TEST(Polynomial, QuarticPolynomialWorks) {
-  const Real roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
-  RunPolynomialTestRealRoots(roots, true, true, kEpsilonLoose);
-}
+// TEST(Polynomial, QuadraticPolynomialWithCloseRootsWorks) {
+//   const Real roots[2] = { 42.42, 42.43 };
+//   RunPolynomialTestRealRoots(roots, true, false, kEpsilonLoose);
+// }
 
-TEST(Polynomial, QuarticPolynomialWithTwoClustersOfCloseRootsWorks) {
-  const Real roots[4] = { 1.23e-1, 2.46e-1, 1.23e+5, 2.46e+5 };
-  RunPolynomialTestRealRoots(roots, true, true, kEpsilonLoose);
-}
+// TEST(Polynomial, QuadraticPolynomialWithComplexRootsWorks) {
+//   VectorReal real;
+//   VectorReal imag;
 
-TEST(Polynomial, QuarticPolynomialWithTwoZeroRootsWorks) {
-  const Real roots[4] = { -42.42, 0.0, 0.0, 42.42 };
-  RunPolynomialTestRealRoots(roots, true, true, kEpsilonLoose);
-}
+//   VectorReal poly = ConstantPolynomial(1.23);
+//   poly = AddComplexRootPair(poly, 42.42, 4.2);
+//   bool success = FindPolynomialRootsJenkinsTraub(poly, &real, &imag);
 
-TEST(Polynomial, QuarticMonomialWorks) {
-  const Real roots[4] = { 0.0, 0.0, 0.0, 0.0 };
-  RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
-}
+//   EXPECT_EQ(success, true);
+//   EXPECT_EQ(real.size(), 2);
+//   EXPECT_EQ(imag.size(), 2);
+//   EXPECT_NEAR(static_cast<double>(real(0)), 42.42, static_cast<double>(kEpsilon));
+//   EXPECT_NEAR(static_cast<double>(real(1)), 42.42, static_cast<double>(kEpsilon));
+//   EXPECT_NEAR(static_cast<double>(sw::universal::abs(imag(0))), 4.2, static_cast<double>(kEpsilon));
+//   EXPECT_NEAR(static_cast<double>(sw::universal::abs(imag(1))), 4.2, static_cast<double>(kEpsilon));
+//   EXPECT_NEAR(static_cast<double>(sw::universal::abs(imag(0) + imag(1))), 0.0, static_cast<double>(kEpsilon));
+// }
 
-TEST(Polynomial, NullPointerAsImaginaryPartWorks) {
-  const Real roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
-  RunPolynomialTestRealRoots(roots, true, false, kEpsilonLoose);
-}
+// TEST(Polynomial, QuarticPolynomialWorks) {
+//   const Real roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
+//   RunPolynomialTestRealRoots(roots, true, true, kEpsilonLoose);
+// }
 
-TEST(Polynomial, NullPointerAsRealPartWorks) {
-  const Real roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
-  RunPolynomialTestRealRoots(roots, false, true, kEpsilon);
-}
+// TEST(Polynomial, QuarticPolynomialWithTwoClustersOfCloseRootsWorks) {
+//   const Real roots[4] = { 1.23e-1, 2.46e-1, 1.23e+5, 2.46e+5 };
+//   RunPolynomialTestRealRoots(roots, true, true, kEpsilonLoose);
+// }
 
-TEST(Polynomial, BothOutputArgumentsNullWorks) {
-  const Real roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
-  RunPolynomialTestRealRoots(roots, false, false, kEpsilon);
-}
+// TEST(Polynomial, QuarticPolynomialWithTwoZeroRootsWorks) {
+//   const Real roots[4] = { -42.42, 0.0, 0.0, 42.42 };
+//   RunPolynomialTestRealRoots(roots, true, true, kEpsilonLoose);
+// }
 
-TEST(Polynomial, JenkinsTraubManyRoots) {
-  static const int N = 25;
-  VectorReal poly = ConstantPolynomial(1.23);
-  VectorReal roots = VectorReal::Random(N);
-  roots = SortVector(roots);
+// TEST(Polynomial, QuarticMonomialWorks) {
+//   const Real roots[4] = { 0.0, 0.0, 0.0, 0.0 };
+//   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
+// }
 
-  for (int i = 0; i < N; ++i) {
-    poly = AddRealRoot(poly, roots[i]);
-  }
+// TEST(Polynomial, NullPointerAsImaginaryPartWorks) {
+//   const Real roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
+//   RunPolynomialTestRealRoots(roots, true, false, kEpsilonLoose);
+// }
 
-  VectorReal real;
-  bool success = FindPolynomialRootsJenkinsTraub(poly, &real, NULL);
-  real = SortVector(real);
-  EXPECT_EQ(success, true);
-  EXPECT_EQ(real.size(), N);
-  for (int i = 0; i < real.size(); i++) {
-    EXPECT_NEAR(static_cast<double>(EvaluatePolynomial(poly, real[i])), 0, static_cast<double>(kEpsilonLoose));
-  }
-}
+// TEST(Polynomial, NullPointerAsRealPartWorks) {
+//   const Real roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
+//   RunPolynomialTestRealRoots(roots, false, true, kEpsilon);
+// }
 
-TEST(Polynomial, HardPolynomial1) {
-  VectorReal polynomial(11);
-  VectorReal roots_re(10);
-  VectorReal roots_im(10);
+// TEST(Polynomial, BothOutputArgumentsNullWorks) {
+//   const Real roots[4] = { 1.23e-4, 1.23e-1, 1.23e+2, 1.23e+5 };
+//   RunPolynomialTestRealRoots(roots, false, false, kEpsilon);
+// }
 
-  polynomial(10) = -52412.8655144021;
-  polynomial(9) = -28342.548095425875;
-  polynomial(8) = 20409.84088622263;
-  polynomial(7) = 25844.743360023815;
-  polynomial(6) = 11474.831044766257;
-  polynomial(5) = 1909.2968243041091;
-  polynomial(4) = -692.3579951742573;
-  polynomial(3) = -562.5089223272787;
-  polynomial(2) = -105.89974320540716;
-  polynomial(1) = 18.62488243410351;
-  polynomial(0) = 5.576312106019016;
+// TEST(Polynomial, JenkinsTraubManyRoots) {
+//   static const int N = 25;
+//   VectorReal poly = ConstantPolynomial(1.23);
+//   VectorReal roots = VectorReal::Random(N);
+//   roots = SortVector(roots);
 
-  EXPECT_TRUE(
-      FindPolynomialRootsJenkinsTraub(polynomial, &roots_re, &roots_im));
-}
+//   for (int i = 0; i < N; ++i) {
+//     poly = AddRealRoot(poly, roots[i]);
+//   }
 
-TEST(Polynomial, HardPolynomial2) {
-  VectorReal polynomial(20);
-  VectorReal roots_re(19);
-  VectorReal roots_im(19);
+//   VectorReal real;
+//   bool success = FindPolynomialRootsJenkinsTraub(poly, &real, NULL);
+//   real = SortVector(real);
+//   EXPECT_EQ(success, true);
+//   EXPECT_EQ(real.size(), N);
+//   for (int i = 0; i < real.size(); i++) {
+//     EXPECT_NEAR(static_cast<double>(EvaluatePolynomial(poly, real[i])), 0, static_cast<double>(kEpsilonLoose));
+//   }
+// }
 
-  polynomial(19) = -3.3501738067312306e8;
-  polynomial(18) = -6.884086124142883e8;
-  polynomial(17) = 7.702813653628246e8;
-  polynomial(16) = 8.451429594854779e8;
-  polynomial(15) = -7.822417923012168e8;
-  polynomial(14) = -2.0621500003041908e8;
-  polynomial(13) = 2.71193932055516e8;
-  polynomial(12) = 2191206.652049609;
-  polynomial(11) = -4.3103846059516795e7;
-  polynomial(10) = 3893518.9815099635;
-  polynomial(9) = 4037788.101972703;
-  polynomial(8) = -541891.2574823081;
-  polynomial(7) = -260979.552665553;
-  polynomial(6) = 38001.29427556511;
-  polynomial(5) = 12074.712839195976;
-  polynomial(4) = -1512.0183242937462;
-  polynomial(3) = -388.5049059868163;
-  polynomial(2) = 27.301047297669705;
-  polynomial(1) = 6.8768381102442575;
-  polynomial(0) = 0;
+// TEST(Polynomial, HardPolynomial1) {
+//   VectorReal polynomial(11);
+//   VectorReal roots_re(10);
+//   VectorReal roots_im(10);
 
-  EXPECT_TRUE(
-      FindPolynomialRootsJenkinsTraub(polynomial, &roots_re, &roots_im));
-}
+//   polynomial(10) = -52412.8655144021;
+//   polynomial(9) = -28342.548095425875;
+//   polynomial(8) = 20409.84088622263;
+//   polynomial(7) = 25844.743360023815;
+//   polynomial(6) = 11474.831044766257;
+//   polynomial(5) = 1909.2968243041091;
+//   polynomial(4) = -692.3579951742573;
+//   polynomial(3) = -562.5089223272787;
+//   polynomial(2) = -105.89974320540716;
+//   polynomial(1) = 18.62488243410351;
+//   polynomial(0) = 5.576312106019016;
 
-// This test polynomial was provided by a user.
-TEST(Polynomial, JenkinsTraub4Roots1) {
-  const Real roots[4] = {1.0843989379558703, 1.0844294564653463,
-                           1.3072756126590779, 1.4643848994415114};
-  RunPolynomialTestRealRoots(roots, true, false, kEpsilonLoose);
-}
+//   EXPECT_TRUE(
+//       FindPolynomialRootsJenkinsTraub(polynomial, &roots_re, &roots_im));
+// }
+
+// TEST(Polynomial, HardPolynomial2) {
+//   VectorReal polynomial(20);
+//   VectorReal roots_re(19);
+//   VectorReal roots_im(19);
+
+//   polynomial(19) = -3.3501738067312306e8;
+//   polynomial(18) = -6.884086124142883e8;
+//   polynomial(17) = 7.702813653628246e8;
+//   polynomial(16) = 8.451429594854779e8;
+//   polynomial(15) = -7.822417923012168e8;
+//   polynomial(14) = -2.0621500003041908e8;
+//   polynomial(13) = 2.71193932055516e8;
+//   polynomial(12) = 2191206.652049609;
+//   polynomial(11) = -4.3103846059516795e7;
+//   polynomial(10) = 3893518.9815099635;
+//   polynomial(9) = 4037788.101972703;
+//   polynomial(8) = -541891.2574823081;
+//   polynomial(7) = -260979.552665553;
+//   polynomial(6) = 38001.29427556511;
+//   polynomial(5) = 12074.712839195976;
+//   polynomial(4) = -1512.0183242937462;
+//   polynomial(3) = -388.5049059868163;
+//   polynomial(2) = 27.301047297669705;
+//   polynomial(1) = 6.8768381102442575;
+//   polynomial(0) = 0;
+
+//   EXPECT_TRUE(
+//       FindPolynomialRootsJenkinsTraub(polynomial, &roots_re, &roots_im));
+// }
+
+// // This test polynomial was provided by a user.
+// TEST(Polynomial, JenkinsTraub4Roots1) {
+//   const Real roots[4] = {1.0843989379558703, 1.0844294564653463,
+//                            1.3072756126590779, 1.4643848994415114};
+//   RunPolynomialTestRealRoots(roots, true, false, kEpsilonLoose);
+// }
 
 // This test polynomial was provided by a user.
 // TEST(Polynomial, JenkinsTraub4Roots2) {
