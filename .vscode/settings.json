@@ -2,6 +2,7 @@
     "files.associations": {
         "core": "cpp",
         "cholesky": "cpp",
-        "jacobi": "cpp"
+        "jacobi": "cpp",
+        "limits": "cpp"
     }
 }
