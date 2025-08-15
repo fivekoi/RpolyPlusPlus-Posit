@@ -123,7 +123,19 @@ void RunPolynomialTestRealRoots(const double (&real_roots)[N], bool use_real,
 }  // namespace
 
 TEST(Polynomial, MyTest) {
-  const double roots[3] = { 1.0, 2.0, 4.0 };
+  VectorXd real;
+  VectorXd imaginary;
+  
+  const int degree = 8;
+  double roots[degree];
+  for(int j = 0; j < degree; ++j){ 
+      // rand -16 to 16
+      double r = 16 * (static_cast<double>(rand()) / static_cast<double>(RAND_MAX)); 
+      if(rand() % 2 == 0){
+          r *= -1;
+      }
+      roots[j] = r; 
+  }
   RunPolynomialTestRealRoots(roots, true, true, kEpsilon);
 }
 
@@ -311,32 +323,33 @@ TEST(Polynomial, MyTest) {
 // }
 
 // // This test polynomial was provided by a user.
-// TEST(Polynomial, JenkinsTraub4Roots2) {
-//   static const int N = 4;
-//   for (int j = 0; j < 10000; ++j) {
-//     VectorXd poly = ConstantPolynomial(1.23);
-//     VectorXd roots = VectorXd::Random(N);
-//     for (int i = 0; i < N; ++i) {
-//         roots(i) *= 0.5;
-//         roots(i) += 1.0;
-//     }
+TEST(Polynomial, JenkinsTraub4Roots2) {
+  static const int N = 4;
+  for (int j = 0; j < 10000; ++j) {
+    VectorXd poly = ConstantPolynomial(1.23);
+    VectorXd roots = VectorXd::Random(N);
+    for (int i = 0; i < N; ++i) {
+        roots(i) *= rand() % 4;
+        roots(i) += 4.0;
+    }
 
-//     roots = SortVector(roots);
+    roots = SortVector(roots);
+    std::cout << roots << '\n';
 
-//     for (int i = 0; i < N; ++i) {
-//       poly = AddRealRoot(poly, roots[i]);
-//     }
+    for (int i = 0; i < N; ++i) {
+      poly = AddRealRoot(poly, roots[i]);
+    }
 
-//     VectorXd real;
-//     const bool success = FindPolynomialRootsJenkinsTraub(poly, &real, NULL);
-//     EXPECT_EQ(success, true);
-//     real = SortVector(real);
+    VectorXd real;
+    const bool success = FindPolynomialRootsJenkinsTraub(poly, &real, NULL);
+    EXPECT_EQ(success, true);
+    real = SortVector(real);
 
-//     EXPECT_EQ(real.size(), N);
-//     for (int i = 0; i < real.size(); i++) {
-//       EXPECT_NEAR(EvaluatePolynomial(poly, real[i]), 0, kEpsilonLoose);
-//     }
-//   }
-// }
+    EXPECT_EQ(real.size(), N);
+    for (int i = 0; i < real.size(); i++) {
+      EXPECT_NEAR(EvaluatePolynomial(poly, real[i]), 0, kEpsilonLoose);
+    }
+  }
+}
 
 }  // namespace rpoly_plus_plus

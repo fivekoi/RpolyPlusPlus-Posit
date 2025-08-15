@@ -1,10 +1,10 @@
 CMakeFiles/rpoly_plus_plus.dir/src/find_polynomial_roots_jenkins_traub.cc.o: \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/src/find_polynomial_roots_jenkins_traub.cc \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/src/find_polynomial_roots_jenkins_traub.cc \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/src/find_polynomial_roots_jenkins_traub.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/Core \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/DisableStupidWarnings.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/Macros.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/src/find_polynomial_roots_jenkins_traub.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/Core \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/DisableStupidWarnings.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/Macros.h \
  /usr/include/c++/13/cmath /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -89,7 +89,7 @@ CMakeFiles/rpoly_plus_plus.dir/src/find_polynomial_roots_jenkins_traub.cc.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/ConfigureVectorization.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/ConfigureVectorization.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
@@ -183,7 +183,7 @@ CMakeFiles/rpoly_plus_plus.dir/src/find_polynomial_roots_jenkins_traub.cc.o: \
  /usr/include/c++/13/bits/ostream.tcc \
  /usr/include/c++/13/bits/istream.tcc \
  /usr/include/c++/13/bits/sstream.tcc \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/MKL_support.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/MKL_support.h \
  /usr/include/c++/13/cassert /usr/include/assert.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/unordered_map \
@@ -215,135 +215,135 @@ CMakeFiles/rpoly_plus_plus.dir/src/find_polynomial_roots_jenkins_traub.cc.o: \
  /usr/include/c++/13/algorithm \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/Constants.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/Meta.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/Constants.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/Meta.h \
  /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/ForwardDeclarations.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/StaticAssert.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/XprHelper.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/Memory.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/IntegralConstant.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/SymbolicIndex.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/NumTraits.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/MathFunctions.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/GenericPacketMath.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/MathFunctionsImpl.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/ConjHelper.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/Half.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/BFloat16.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/TypeCasting.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/SSE/PacketMath.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/SSE/TypeCasting.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/SSE/MathFunctions.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/SSE/Complex.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/Settings.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/functors/TernaryFunctors.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/functors/BinaryFunctors.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/functors/UnaryFunctors.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/functors/NullaryFunctors.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/functors/StlFunctors.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/functors/AssignmentFunctors.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/IndexedViewHelper.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/ReshapedHelper.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/ArithmeticSequence.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/IO.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/DenseCoeffsBase.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/DenseBase.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/BlockMethods.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/IndexedViewMethods.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/IndexedViewMethods.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/ReshapedMethods.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/ReshapedMethods.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/MatrixBase.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/EigenBase.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Product.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CoreEvaluators.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/AssignEvaluator.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Assign.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/ArrayBase.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/BlasUtil.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/DenseStorage.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/NestByValue.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/ReturnByValue.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/NoAlias.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/PlainObjectBase.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Matrix.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Array.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CwiseTernaryOp.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CwiseBinaryOp.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CwiseUnaryOp.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CwiseNullaryOp.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CwiseUnaryView.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/SelfCwiseBinaryOp.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Dot.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/StableNorm.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Stride.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/MapBase.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Map.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Ref.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Block.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/VectorBlock.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/IndexedView.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Reshaped.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Transpose.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/DiagonalMatrix.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Diagonal.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/DiagonalProduct.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Redux.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Visitor.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Fuzzy.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Swap.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CommaInitializer.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/GeneralProduct.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Solve.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Inverse.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/SolverBase.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/PermutationMatrix.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Transpositions.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/TriangularMatrix.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/SelfAdjointView.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/Parallelizer.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/ForwardDeclarations.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/StaticAssert.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/XprHelper.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/Memory.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/IntegralConstant.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/SymbolicIndex.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/NumTraits.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/MathFunctions.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/GenericPacketMath.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/MathFunctionsImpl.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/ConjHelper.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/Half.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/BFloat16.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/TypeCasting.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/SSE/PacketMath.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/SSE/TypeCasting.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/SSE/MathFunctions.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/SSE/Complex.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/Settings.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/functors/TernaryFunctors.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/functors/BinaryFunctors.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/functors/UnaryFunctors.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/functors/NullaryFunctors.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/functors/StlFunctors.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/functors/AssignmentFunctors.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/IndexedViewHelper.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/ReshapedHelper.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/ArithmeticSequence.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/IO.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/DenseCoeffsBase.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/DenseBase.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/BlockMethods.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/IndexedViewMethods.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/IndexedViewMethods.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/ReshapedMethods.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/ReshapedMethods.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/MatrixBase.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/EigenBase.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Product.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CoreEvaluators.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/AssignEvaluator.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Assign.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/ArrayBase.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/BlasUtil.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/DenseStorage.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/NestByValue.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/ReturnByValue.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/NoAlias.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/PlainObjectBase.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Matrix.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Array.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CwiseTernaryOp.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CwiseBinaryOp.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CwiseUnaryOp.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CwiseNullaryOp.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CwiseUnaryView.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/SelfCwiseBinaryOp.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Dot.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/StableNorm.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Stride.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/MapBase.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Map.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Ref.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Block.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/VectorBlock.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/IndexedView.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Reshaped.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Transpose.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/DiagonalMatrix.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Diagonal.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/DiagonalProduct.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Redux.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Visitor.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Fuzzy.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Swap.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CommaInitializer.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/GeneralProduct.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Solve.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Inverse.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/SolverBase.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/PermutationMatrix.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Transpositions.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/TriangularMatrix.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/SelfAdjointView.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/Parallelizer.h \
  /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/ProductEvaluators.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/GeneralMatrixVector.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/GeneralMatrixMatrix.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/SolveTriangular.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/SelfadjointMatrixVector.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/SelfadjointProduct.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/SelfadjointRank2Update.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/TriangularMatrixVector.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/TriangularMatrixMatrix.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/TriangularSolverMatrix.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/TriangularSolverVector.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/BandMatrix.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CoreIterators.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/ConditionEstimator.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/BooleanRedux.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Select.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/VectorwiseOp.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/PartialReduxEvaluator.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Random.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Replicate.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Reverse.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/ArrayWrapper.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/StlIterators.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/GlobalFunctions.h \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/ReenableStupidWarnings.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/ProductEvaluators.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/GeneralMatrixVector.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/SolveTriangular.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/SelfadjointProduct.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/SelfadjointRank2Update.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/TriangularMatrixVector.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/TriangularSolverMatrix.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/products/TriangularSolverVector.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/BandMatrix.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/CoreIterators.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/ConditionEstimator.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/BooleanRedux.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Select.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/VectorwiseOp.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/PartialReduxEvaluator.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Random.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Replicate.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/Reverse.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/ArrayWrapper.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/StlIterators.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/GlobalFunctions.h \
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/Eigen/src/Core/util/ReenableStupidWarnings.h \
  /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
@@ -352,4 +352,4 @@ CMakeFiles/rpoly_plus_plus.dir/src/find_polynomial_roots_jenkins_traub.cc.o: \
  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
  /usr/include/c++/13/bits/locale_conv.h \
  /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/iostream \
- /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/src/polynomial.h
+ /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/src/polynomial.h

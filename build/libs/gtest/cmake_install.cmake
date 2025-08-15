@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/libs/gtest
+# Install script for directory: /mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/libs/gtest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/build/libs/gtest/googlemock/cmake_install.cmake")
+  include("/mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/build/libs/gtest/googlemock/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/mnt/c/Users/wkooi/OneDrive/Documents/GitHub/RpolyPlusPlus-Posit/build/libs/gtest/install_local_manifest.txt"
+  file(WRITE "/mnt/c/Users/wkooi/Documents/GitHub/RpolyPlusPlus-Posit/build/libs/gtest/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
